@@ -1,0 +1,15 @@
+{
+  "name": "spectralData",
+  "type": "function",
+  "description": "Returns spectral profile values",
+  "arguments": [ {
+    "arg":"profile_field",
+    "description":"binary data field (BLOB) with widget type Spectral Profiles"}
+                 ],
+  "examples": [{
+    "expression":"spectralData(\"profiles\")",
+    "returns":"A map with spectral data from spectral profiles in field column \"profiles\""},
+    {"expression": "spectralData(\"profiles\")['xUnit']",
+    "returns":  "xUnit string of the spectral profile, e.g. 'nm' for wavelength unit"}
+  ]
+}
